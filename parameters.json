@@ -1,0 +1,54 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "publisher": {
+            "value": "OpenLogic"
+        },
+        "offer": {
+            "value": "CentOS"
+        },
+        "sku": {
+            "value": "7_9-gen2"
+        },
+        "osState": {
+            "value": "Specialized"
+        },
+        "osType": {
+            "value": "Linux"
+        },
+        "location": {
+            "value": "eastus"
+        },
+        "hyperVGeneration": {
+            "value": "V2"
+        },
+        "galleryName": {
+            "value": "lao_magento_image_gallery"
+        },
+        "imageDefinitionName": {
+            "value": "img-magento-lao-cer"
+        },
+        "versionName": {
+            "value": "0.0.2"
+        },
+        "sourceVmId": {
+            "value": "/subscriptions/3070e279-2756-49bd-ab36-caf1c36f5e47/resourceGroups/rg-alberto/providers/Microsoft.Compute/virtualMachines/lao-vm01"
+        },
+        "defaultReplicaCount": {
+            "value": 1
+        },
+        "excludedFromLatest": {
+            "value": false
+        },
+        "regionReplications": {
+            "value": [
+                {
+                    "name": "eastus",
+                    "regionalReplicaCount": 1,
+                    "storageAccountType": "Standard_LRS"
+                }
+            ]
+        }
+    }
+}
